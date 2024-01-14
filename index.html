@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOD</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="icon" href="./assets/nasa-1-logo-black-and-white.png">
+</head>
+<body>
+    
+    <!--               Form section          -->
+    <section>
+        <div id="form-container">
+            <img fetchpriority="high" width="60" height="50.58" alt="NASA Logo" src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo@2x.png" srcset="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg">
+            <h1 id="heading">APOD : Astronomy Picture Of The Day</h1>
+            <form action="#" id="search-form">
+                <!-- <label for="search-input"></label> -->
+                <input type="date" name="searchDate" id="search-input" pattern="\d{4}-\d{2}-\d{2}">
+                <button id="btn">SEARCH</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!--           Image container section         -->
+
+    <section>
+        <div id="current-image-container">
+            
+        </div>
+    </section>
+
+    <!--            Search History Section           -->
+    
+    <section>
+        <div id="search-history-container">
+            <h2>Search History</h2>
+            <ul id="search-history">
+            </ul>
+        </div>
+    </section>
+    <script src="./nasa.js"></script>
+</body>
+</html>
+
